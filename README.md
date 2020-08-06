@@ -6,7 +6,7 @@ At Manual we sometimes create landing pages to better explain our value proposit
 who land on these from ads. As an experiment, we’ve decided to create a landing page that will
 include a quiz, which will guide users through deciding if Manual is good for them.
 
-## Tech stacks
+## Tech stack
 
 - Bootstrapped with [CRA](https://github.com/facebook/create-react-app)
 - Stage management with [Zustand](https://github.com/react-spring/zustand)
@@ -39,3 +39,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
+
+## TODO
+- Quiz
+  - [ ] More animations
+  - [ ] More tests
