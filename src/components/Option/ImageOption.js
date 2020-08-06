@@ -6,6 +6,7 @@ function ImageOption({ title, selected }) {
     <div
       dangerouslySetInnerHTML={{ __html: title }}
       className={'choice-option option-img' + (selected ? ' selected' : '')}
+      data-testid="image-choice-option"
     ></div>
   );
 }

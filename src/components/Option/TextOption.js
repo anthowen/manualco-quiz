@@ -7,10 +7,8 @@ function TextOption({ title, selected }) {
       dangerouslySetInnerHTML={{
         __html: `<span class='ml-10'>${title}</span>`,
       }}
-      className={
-        'choice-option option-text block text-4xl mx-auto text-center' +
-        (selected ? ' selected' : '')
-      }
+      className={'choice-option option-text ' + (selected ? ' selected' : '')}
+      data-testid="text-choice-option"
     ></div>
   );
 }

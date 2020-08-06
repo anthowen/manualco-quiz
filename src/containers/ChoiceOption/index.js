@@ -16,7 +16,11 @@ function ChoiceOption({ title, value, type }) {
   }, [choose, chosenValue, value]);
 
   return (
-    <div className="choice-option__wrapper" onClick={handleSelect}>
+    <div
+      className="choice-option__wrapper"
+      onClick={handleSelect}
+      data-testid="choice-option"
+    >
       {type === 'img' ? (
         <ImageOption title={title} selected={chosenValue === value} />
       ) : (
