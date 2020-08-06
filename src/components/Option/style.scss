@@ -1,3 +1,5 @@
+@import '../../styles/utilities.scss';
+
 .choice-option {
   &.selected::before {
     content: '';
@@ -5,7 +7,13 @@
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    background: url(../../assets/svg/choice-icon.svg) no-repeat center #51bce6;
+    background: url(../../assets/svg/choice-icon.svg) no-repeat center
+      $buttonColor;
+  }
+
+  &.option-img img {
+    margin: 0 auto 0 auto;
+    display: block;
   }
 
   &.option-text {

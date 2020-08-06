@@ -12,9 +12,7 @@ export default function Question({ question, optionType, options }) {
 
   return (
     <section className="question__section">
-      {/* <div className="flex flex-col text-center w-full mb-12"> */}
       <h1 className="question__title">{question}</h1>
-      {/* </div> */}
       <div className="question__list">
         {options
           ? options.map((option) => {
