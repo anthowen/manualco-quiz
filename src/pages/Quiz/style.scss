@@ -17,7 +17,7 @@
     margin: 2.5rem 2.5rem 0 auto;
 
     &--next {
-      padding: 1rem;
+      padding: 0.3rem;
       display: inline-flex;
       align-items: center;
       border: 0px;
@@ -35,7 +35,7 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: gray;
+        background-color: rgba($color: #000000, $alpha: 0.8);
         visibility: hidden;
         transition: all 0.3s ease-in-out;
       }

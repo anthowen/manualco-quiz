@@ -1,5 +1,41 @@
 @import '../../styles/utilities.scss';
 
+.back__link {
+  position: fixed;
+  right: 4rem;
+  top: 4rem;
+
+  padding: 0.3rem;
+  display: inline-flex;
+  align-items: center;
+  border: 0px;
+  background: transparent;
+  font-size: 1.875rem;
+  font-family: $parFont;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
 .quiz__result-message {
   font-family: $titleFont;
   margin: 10rem 1.5rem 0 1.5rem;

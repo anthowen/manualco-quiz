@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useStore } from '../../store';
 import './style.scss';
 
@@ -18,28 +19,34 @@ export default function QuizResult() {
   }, [results]);
 
   return (
-    <h1 className="quiz__result-message">
-      {quizResult ? (
-        <span>
-          Unfortunately, we are unable to prescribe this medication for you.
-          This is because finasteride can alter the PSA levels, which maybe used
-          to monitor for cancer. You should discuss this further with your GP or
-          specialist if you would still like this medication
-        </span>
-      ) : (
-        <span>
-          Great news! We have the perfect treatment for your hair loss. Proceed
-          to{' '}
-          <a
-            href="https://www.manual.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.manual.co
-          </a>
-          , and prepare to say hello to your new hair!
-        </span>
-      )}
-    </h1>
+    <>
+      <Link to="/" className="back__link">
+        Back
+      </Link>
+
+      <h1 className="quiz__result-message">
+        {quizResult ? (
+          <span>
+            Unfortunately, we are unable to prescribe this medication for you.
+            This is because finasteride can alter the PSA levels, which maybe
+            used to monitor for cancer. You should discuss this further with
+            your GP or specialist if you would still like this medication
+          </span>
+        ) : (
+          <span>
+            Great news! We have the perfect treatment for your hair loss.
+            Proceed to{' '}
+            <a
+              href="https://www.manual.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.manual.co
+            </a>
+            , and prepare to say hello to your new hair!
+          </span>
+        )}
+      </h1>
+    </>
   );
 }
