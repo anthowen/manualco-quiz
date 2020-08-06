@@ -1,10 +1,23 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b5da2671-1105-4e8a-99b5-5bddb105fb07/deploy-status)](https://app.netlify.com/sites/trusting-wozniak-f588a5/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+
+At Manual we sometimes create landing pages to better explain our value proposition to users
+who land on these from ads. As an experiment, we’ve decided to create a landing page that will
+include a quiz, which will guide users through deciding if Manual is good for them.
+
+## Tech stack
+
+- Bootstrapped with [CRA](https://github.com/facebook/create-react-app)
+- Stage management with [Zustand](https://github.com/react-spring/zustand)
+- Animation with [AOS](https://github.com/michalsnik/aos)
+- *SCSS*
+
+## Live link
+
+[https://manualco-product-quiz.netlify.app/](https://manualco-product-quiz.netlify.app/)
 
 ## Available Scripts
-
-In the project directory, you can run:
 
 ### `yarn start`
 
@@ -27,44 +40,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## TODO
+- Quiz
+  - [ ] More animations
+  - [ ] More tests
