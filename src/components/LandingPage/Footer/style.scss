@@ -29,7 +29,7 @@ footer {
   flex-direction: column;
   margin-left: 100px; //responsive low res bug
 
-  __title {
+  &__title {
     color: $buttonColor;
     letter-spacing: 2.4px;
     font-family: $titleFont;
@@ -60,6 +60,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 40px;
 
     .logo {
       display: none;
@@ -68,12 +69,6 @@ footer {
 
   .footer__links {
     margin: 0;
-  }
-}
-
-@media screen and (max-width: 840px) {
-  .social-media {
-    display: none;
   }
 }
 
@@ -89,6 +84,26 @@ footer {
   margin: 0px 20px 0px 20px;
 }
 
+@media screen and (max-width: 819px) {
+  .footer__link {
+    padding-top: 1rem;
+    margin-left: 0px; //responsive low res bug fix
+
+    a,
+    h3 {
+      text-align: center;
+    }
+  }
+
+  .social-media {
+    margin-left: 40px;
+  }
+
+  .company-parent {
+    margin: 0px 50px 0px 50px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .footer__links {
     flex-direction: column;
@@ -99,32 +114,12 @@ footer {
     }
   }
 
-  .footer__link footer {
-    padding: 30px 0 0 0;
-  }
-
   .footer__links {
     justify-content: center;
   }
 
   .social-media {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 819px) {
-  .footer__link {
-    margin-left: 0px; //responsive low res bug fix
-  }
-  .company-parent {
-    margin: 0px 50px 0px 50px;
-  }
-
-  .footer__link h3 {
-    text-align: center;
-  }
-
-  .footer__link a {
-    text-align: center;
+    align-items: center;
+    margin-left: 0px;
   }
 }
