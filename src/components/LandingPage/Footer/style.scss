@@ -9,14 +9,14 @@ footer {
   padding: 78px;
   position: relative;
   flex-direction: column;
-}
 
-footer .logo {
-  width: 80px;
-  height: 75px;
-  position: absolute;
-  left: 78px;
-  top: 78px;
+  .logo {
+    width: 80px;
+    height: 75px;
+    position: absolute;
+    left: 78px;
+    top: 78px;
+  }
 }
 
 .footer__links {
@@ -28,23 +28,23 @@ footer .logo {
   display: flex;
   flex-direction: column;
   margin-left: 100px; //responsive low res bug
-}
 
-.footer__link__title {
-  color: $buttonColor;
-  letter-spacing: 2.4px;
-  font-family: $titleFont;
-  font-weight: bold;
-  font-size: 12px;
-  padding-bottom: 17px;
-}
+  __title {
+    color: $buttonColor;
+    letter-spacing: 2.4px;
+    font-family: $titleFont;
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 17px;
+  }
 
-.footer__links a {
-  font-size: 14px;
-  line-height: 36px;
-  letter-spacing: 0px;
-  color: $titleColor;
-  font-family: $parFont;
+  a {
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: $titleColor;
+    font-family: $parFont;
+  }
 }
 
 .social_media_icons {
@@ -56,21 +56,23 @@ footer .logo {
 }
 
 @media screen and (max-width: 1125px) {
-  footer .logo {
-    display: none;
-  }
   footer {
     justify-content: center;
     align-items: center;
     margin: 0;
+
+    .logo {
+      display: none;
+    }
   }
+
   .footer__links {
     margin: 0;
   }
 }
 
 @media screen and (max-width: 840px) {
-  .socialmedia {
+  .social-media {
     display: none;
   }
 }
@@ -90,13 +92,14 @@ footer .logo {
 @media screen and (max-width: 550px) {
   .footer__links {
     flex-direction: column;
+
+    a,
+    h3 {
+      text-align: center !important;
+    }
   }
 
-  .footer__link a,
-  h3 {
-    text-align: center !important;
-  }
-  footer {
+  .footer__link footer {
     padding: 30px 0 0 0;
   }
 
@@ -104,7 +107,7 @@ footer .logo {
     justify-content: center;
   }
 
-  .socialmedia {
+  .social-media {
     display: none;
   }
 }
@@ -113,7 +116,7 @@ footer .logo {
   .footer__link {
     margin-left: 0px; //responsive low res bug fix
   }
-  .companyparent {
+  .company-parent {
     margin: 0px 50px 0px 50px;
   }
 

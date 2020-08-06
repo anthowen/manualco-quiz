@@ -1,0 +1,8 @@
+@import '../../styles/utilities.scss';
+
+.choice-option__wrapper {
+  margin: 0 2rem 0 2rem;
+  flex-grow: 1;
+  position: relative;
+  cursor: pointer;
+}

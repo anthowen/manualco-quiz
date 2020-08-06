@@ -19,68 +19,66 @@
   display: flex;
   flex-direction: column;
   margin-top: 104px;
-}
 
-.header__content h1 {
-  color: $titleColor;
-  font-size: 82px;
-  line-height: 98px;
-  letter-spacing: 0px;
-  font-family: $titleFont;
-  font-weight: 800;
-}
+  h1 {
+    color: $titleColor;
+    font-size: 82px;
+    line-height: 98px;
+    letter-spacing: 0px;
+    font-family: $titleFont;
+    font-weight: 800;
+  }
 
-.header__content p {
-  margin-top: 22px;
-  width: 400px;
-  line-height: 26px;
-  font-size: 18px;
-  letter-spacing: 0;
-  font-family: $parFont;
-  font-weight: 400;
-  color: $titleColor;
-}
+  p {
+    margin-top: 22px;
+    width: 400px;
+    line-height: 26px;
+    font-size: 18px;
+    letter-spacing: 0;
+    font-family: $parFont;
+    font-weight: 400;
+    color: $titleColor;
+  }
 
-// button
+  button {
+    width: 200px;
+    height: 48px;
+    font-family: $titleFont;
+    background-color: $buttonColor;
+    border-radius: 49.5px;
+    margin-top: 50px;
+    color: white;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 1s;
 
-.header__content button {
-  width: 200px;
-  height: 48px;
-  font-family: $titleFont;
-  background-color: $buttonColor;
-  border-radius: 49.5px;
-  margin-top: 50px;
-  color: white;
-  letter-spacing: 2.4px;
-  font-size: 12px;
-  font-weight: bold;
-  transition: 1s;
-}
+    &:hover {
+      -webkit-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+      -moz-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+      box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+    }
+  }
 
-.header__content button:hover {
-  -webkit-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
-  -moz-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
-  box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
-}
+  &__link {
+    width: 200px;
+    height: 48px;
+    font-family: $titleFont;
+    background-color: $buttonColor;
+    border-radius: 49.5px;
+    margin-top: 50px;
+    color: white;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 1s;
 
-.header__content__link {
-  width: 200px;
-  height: 48px;
-  font-family: $titleFont;
-  background-color: $buttonColor;
-  border-radius: 49.5px;
-  margin-top: 50px;
-  color: white;
-  letter-spacing: 2.4px;
-  font-size: 12px;
-  font-weight: bold;
-  transition: 1s;
-}
-
-.header__content__link:hover {
-  -webkit-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
-  -moz-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
-  box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+    &:hover {
+      -webkit-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+      -moz-box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+      box-shadow: 0px 20px 30px 0px rgba(52, 209, 209, 0.72);
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {

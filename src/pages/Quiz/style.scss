@@ -1,0 +1,53 @@
+@import '../../styles/utilities.scss';
+
+.quiz__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 2rem 0.5rem 0 0.5rem;
+
+  @include bigPhoneAndUp {
+    padding: 0 5rem 0 5rem;
+    height: 100vh;
+  }
+
+  .quiz__action {
+    margin: 2.5rem 2.5rem 0 auto;
+
+    &--next {
+      padding: 1rem;
+      display: inline-flex;
+      align-items: center;
+      border: 0px;
+      background: transparent;
+      font-size: 1.875rem;
+      font-family: $parFont;
+      cursor: pointer;
+
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: gray;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover:before {
+        visibility: visible;
+        width: 100%;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}

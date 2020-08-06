@@ -9,3 +9,30 @@ $sans: 'Open Sans', sans-serif;
 $titleColor: #0c3c3d;
 $buttonColor: #34d1d1;
 $footerBackground: #e5f5f4;
+
+// Mixins
+@mixin bigPhoneAndUp() {
+  @media screen and (min-width: 30em) {
+    @content;
+  }
+}
+@mixin tabletAndUp {
+  @media screen and (min-width: 48em) {
+    @content;
+  }
+}
+@mixin wideDesktopAndUp() {
+  @media screen and (min-width: 70em) {
+    @content;
+  }
+}
+@mixin monitorAndUp() {
+  @media screen and (min-width: 95rem) {
+    @content;
+  }
+}
+@mixin tabletAndDown {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}

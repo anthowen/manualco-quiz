@@ -4,7 +4,7 @@ import { withRouter } from 'react-router';
 import './index.scss';
 
 //import logo
-import logo from '../../../assets/logo.svg';
+import logo from '../../../assets/svg/logo.svg';
 
 const LandingHeader = ({ history }) => {
   const handleTakeQuizClick = () => {

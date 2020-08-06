@@ -1,6 +1,5 @@
 import React from 'react';
 
-//import styleing
 import './style.scss';
 
 const PanelWrapper = ({ children }) => {

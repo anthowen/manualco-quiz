@@ -24,7 +24,7 @@ const Footer = () => {
           <a href="/">Products</a>
         </div>
 
-        <div className="footer__link companyparent">
+        <div className="footer__link company-parent">
           <h3 className="footer__link__title">COMPANY</h3>
 
           <a href="/">Press Releases</a>
@@ -42,7 +42,7 @@ const Footer = () => {
           <a href="/">Products</a>
         </div>
 
-        <div className="footer__link socialmedia">
+        <div className="footer__link social-media">
           <h3 className="footer__link__title">FOLLOW US</h3>
 
           <div className="social_media_icons">

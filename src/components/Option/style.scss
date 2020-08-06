@@ -1,0 +1,25 @@
+.choice-option {
+  &.selected::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: url(../../assets/svg/choice-icon.svg) no-repeat center #51bce6;
+  }
+
+  &.option-text {
+    display: block;
+    font-size: 2.25rem;
+    margin: 0 auto 0 auto;
+    text-align: center;
+
+    & > span {
+      margin-left: 2.5rem;
+    }
+
+    &.selected::before {
+      top: 1rem;
+    }
+  }
+}
