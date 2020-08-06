@@ -1,0 +1,17 @@
+@import '../../../styles/utilities.scss';
+
+.title {
+  color: $titleColor;
+  font-family: $parFont;
+  font-size: 36px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  line-height: 48px;
+}
+
+@media screen and (max-width: 430px) {
+  .title {
+    font-size: 20px;
+  }
+}
