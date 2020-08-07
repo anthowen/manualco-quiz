@@ -9,7 +9,7 @@ include a quiz, which will guide users through deciding if Manual is good for th
 ## Tech stack
 
 - Bootstrapped with [CRA](https://github.com/facebook/create-react-app)
-- Stage management with [Zustand](https://github.com/react-spring/zustand)
+- State management using [Zustand](https://github.com/react-spring/zustand)
 - Animation with [AOS](https://github.com/michalsnik/aos)
 - *SCSS*
 
