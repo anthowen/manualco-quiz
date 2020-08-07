@@ -1,5 +1,10 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b5da2671-1105-4e8a-99b5-5bddb105fb07/deploy-status)](https://app.netlify.com/sites/trusting-wozniak-f588a5/deploys)
 
+### ATTENTION: Live link show a page with NO styles applied.
+This has been an [issue](https://github.com/styled-components/styled-components/issues/3122) for CRA bootstrapped app along with styled-components. They are likely resolve this issue soon.
+
+However, it works FINE on local environment.
+
 ## Introduction
 
 At Manual we sometimes create landing pages to better explain our value proposition to users
